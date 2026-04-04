@@ -3,11 +3,8 @@ import { IoMdArrowDropleft, IoMdArrowDropright } from "react-icons/io";
 
 import { useEffect } from "react";
 import {
-    FaAndroid,
     FaApple,
     FaWindows,
-    FaChrome,
-    FaCloud,
 } from "react-icons/fa";
 import { translations } from "../../../Data/translations";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";

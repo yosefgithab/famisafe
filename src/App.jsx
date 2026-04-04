@@ -32,7 +32,7 @@ import ParentalAppRivew from "./Pages/Blogs/ParentingKnowledge/ParentalAppRivew.
 import ParentingTips from "./Pages/Blogs/ParentingKnowledge/ParentingTips.jsx";
 import TrindingAppRivew from "./Pages/Blogs/ParentingKnowledge/TrindingAppRivew.jsx";
 import TeenSlang from "./Pages/Blogs/ParentingKnowledge/TeenSlang.jsx";
-import WebFilter from "./Pages/Features/ContentSefty/webFilter.jsx";
+
 import DrivingReport from "./Pages/Features/LocationService/DrivingReport.jsx";
 import Header1 from "./componets/NavBar1/Header1.jsx";
 import Geonection from "./Pages/Products/Genection/Geonection.jsx";
@@ -87,7 +87,6 @@ const app = () => {
           <Route path="/tiktok-history" element={<TiktokHistory />} />
           <Route path="/detect-suspicious-text" element={<DetectSuspiciousphotos />} />
           <Route path="/block-websites" element={<BlockWebsites />} />
-          <Route path="/Web-Filter" element={<WebFilter />} />
           <Route path="/Browser-History" element={<BrowserHistory />} />
           <Route path="/kids-location-tracking" element={<LocationTraking />} />
           {/* location sevice */}
