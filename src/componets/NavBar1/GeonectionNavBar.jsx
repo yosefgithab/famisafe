@@ -38,7 +38,7 @@ export default function GeonectionNavBar() {
       <div className=" w-full flex items-center justify-between px-6 py- md:px-35">
 
         {/* Logo */}
-        <a href="hero-section" className="flex items-center gap-2 text-xl font-bold text-purple-800 hover:opacity-90">
+        <a href="/Geonection" className="flex items-center gap-2 text-xl font-bold text-purple-800 hover:opacity-90">
           <img
             src="/assets/images/logo\Geoconection.png"
             alt="FamiSafe Logo"

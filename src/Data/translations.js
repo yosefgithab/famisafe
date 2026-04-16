@@ -75,14 +75,14 @@ export const translations = {
             { id: 13, title: "Location Tracking", desc: "Track your child’s location in real time, check history, and get alerts for safe zones.", image: "https://famisafe.wondershare.com/images/images-2025/new-index/location-tracking-bg.jpg", url: "https://famisafe.wondershare.com/main/sign-up" },
             { id: 15, title: "SOS Alert", desc: "Allow your child to send instant emergency alerts with their location. .", image: "https://famisafe.wondershare.com/images/images-2025/new-index/sos-alert-bg.jpg" },
         ],
-        Yo656646ur: "Your",
-        Fami6346ly: "Family",
-        pl46766an: "plan ",
-        Cho3FFUJOose: "Choose",
+        Your: "Your",
+        Family: "Family",
+        plan: "plan ",
+        Choose: "Choose",
         Trustedby47GGFmillions: "Trusted by millions, FamiSafe helps parents manage their kids' digital lives. Pick your plan now!",
-        Year884902ly: "Yearly",
-        moNTH: "/mo",
-        $59billedannually: "$59.9 billed annually",
+        Yearly: "Yearly",
+        month: "/mo",
+        $59billedannually: "ETB 17,999 billed annually",
         Unlockallpremiumeatures: "Unlock all premium features ",
         BestVal988ue: "Best Value",
         Seeallpl232R34ans: "See all plans",
@@ -190,6 +190,7 @@ export const translations = {
                 features: { Cleanliness: 85, Comfort: 75, Location: 80, Price: 70 },
             },
         ],
+        
         WorksGreat: "Works Great ",
         withFamiSafe: "with FamiSafe",
         JoinOur: "Join  our",
@@ -467,23 +468,42 @@ export const translations = {
                 desc: "Parental Control Solution",
                 img: 'https://famisafe.wondershare.com/images/images-2025/famisafe/home-icon.svg',
                 primary: true,
-                href: "/famisafe", // Official FamiSafe
+                href: "/famisafe", 
             },
             {
                 title: "FamiSafe for School, ",
                 desc: "School & Parent Sync",
                 img: 'https://famisafe.wondershare.com/images/images-2025/famisafe/school-icon.svg',
                 href: "/school", // School link
-                target: "_blank",
             },
             {
                 title: "Geonection",
                 desc: "Realtime Location Sharing",
                 img: 'https://famisafe.wondershare.com/images/images-2025/famisafe/geonection-icon.svg',
                 href: "/Geonection", // Geonection link
-                target: "_blank",
             },
         ],
+//          cardss : [
+//   {
+//     title: "FamiSafe🔥 👑",
+//     desc: "Parental Control Solution",
+//     img: "https://famisafe.wondershare.com/images/images-2025/famisafe/home-icon.svg",
+//     primary: true,
+//     href: "/famisafe",
+//   },
+//   {
+//     title: "FamiSafe for School",
+//     desc: "School & Parent Sync",
+//     img: "https://famisafe.wondershare.com/images/images-2025/famisafe/school-icon.svg",
+//     href: "/school",
+//   },
+//   {
+//     title: "Geonection",
+//     desc: "Realtime Location Sharing",
+//     img: "https://famisafe.wondershare.com/images/images-2025/famisafe/geonection-icon.svg",
+//     href: "/Geonection",
+//   },
+// ],
         // End products Driopdown
 
         // features Dropdown
@@ -493,33 +513,33 @@ export const translations = {
                 title: "Device Activity",
                 bg: "#f5f1ff",
                 features: [
-                    { title: "Calls & Messages", newTag: true, target: "_blank", link: "/Call-meassage" },
-                    { title: "Screen Time", newTag: true, target: "_blank", link: "/Screen-Time" },
-                    { title: "Screen Viewer", target: "_blank", link: "/Screen-Viewer" },
-                    { title: "App Rules", target: "_blank", link: "/AppRole" },
-                    { title: "One-way Audio", target: "_blank", newTag: true, link: "/One-way-Audio" },
-                    { title: "Activity Report", target: "_blank", link: "/Activity-Report" },
+                    { title: "Calls & Messages", newTag: true,  link: "/Call-meassage" },
+                    { title: "Screen Time", newTag: true,  link: "/Screen-Time" },
+                    { title: "Screen Viewer",  link: "/Screen-Viewer" },
+                    { title: "App Rules",  link: "/AppRole" },
+                    { title: "One-way Audio", newTag: true, link: "/One-way-Audio" },
+                    { title: "Activity Report", link: "/Activity-Report" },
                 ],
             },
             {
                 title: "Content Safety",
                 bg: "#fff8e9",
                 features: [
-                    { title: "YouTube Parental Control", target: "_blank", link: "/youtube-parental-controls" },
-                    { title: "TikTok History", target: "_blank", link: "/tiktok-history" },
-                    { title: "Inappropriate Pictures", target: "_blank", link: "/detect-suspicious-text" },
-                    { title: "Social App Detection", target: "_blank", link: "/block-websites" },
-                    { title: "Web Filter", target: "_blank", link: "/Web-Filter" },
-                    { title: "Browser History", target: "_blank", link: "/Browser-History" },
+                    { title: "YouTube Parental Control",  link: "/youtube-parental-controls" },
+                    { title: "TikTok History",  link: "/tiktok-history" },
+                    { title: "Inappropriate Pictures", link: "/detect-suspicious-text" },
+                    { title: "Social App Detection",  link: "/block-websites" },
+                    { title: "Web Filter",  link: "/Web-Filter" },
+                    { title: "Browser History",  link: "/Browser-History" },
                 ],
             },
             {
                 title: "Location Service",
                 bg: "#f1ffef",
                 features: [
-                    { title: "Location Tracking", target: "_blank", link: "/Locaton-Tracking" },
-                    { title: "Driving Report", target: "_blank", link: "/Driving-Report" },
-                    { title: "SOS Alert", target: "_blank", newTag: true, link: "/Sos-Alart" },
+                    { title: "Location Tracking",  link: "/Locaton-Tracking" },
+                    { title: "Driving Report",  link: "/Driving-Report" },
+                    { title: "SOS Alert", newTag: true, link: "/Sos-Alart" },
                 ],
             },
         ],
@@ -530,10 +550,10 @@ export const translations = {
             {
                 title: "Location Tracker",
                 links: [
-                    { label: "Mobile Tracker", target: "_blank", href: "/Mobile-Tracking" },
-                    { label: "Location Sharing", target: "_blank", href: "/Location-Sharing" },
-                    { label: "Family Tracker", target: "_blank", href: "/Family-Tracking" },
-                    { label: "Teen Driving", target: "_blank", href: "/Teen-Driving" },
+                    { label: "Mobile Tracker", href: "/Mobile-Tracking" },
+                    { label: "Location Sharing",  href: "/Location-Sharing" },
+                    { label: "Family Tracker",  href: "/Family-Tracking" },
+                    { label: "Teen Driving",  href: "/Teen-Driving" },
                 ],
             },
             {
@@ -541,25 +561,25 @@ export const translations = {
                 links: [
                     { label: "Screen Time Control", href: "/Screen-Time-Blogs" },
                     { label: "iOS Parental Control", href: "/Ios-Parental-Controller" },
-                    { label: "Android Parental Control", href: "/Andriod-Parental-Controller" },
-                    { label: "Desktop Control", href: "/DeskTop-Parental-Controller" },
+                    { label: "Android Parental Control",  href: "/Andriod-Parental-Controller" },
+                    { label: "Desktop Control",  href: "/DeskTop-Parental-Controller" },
                     { label: "Chromebook Control", href: "/ChromeBook-Controller" },
                 ],
             },
             {
                 title: "App Blocker",
                 links: [
-                    { label: "Block Games", href: "/Block-Game" },
+                    { label: "Block Games",  href: "/Block-Game" },
                     { label: "Block YouTube", href: "/Block-Youtube" },
-                    { label: "Block Apps", href: "/App-Blocks" },
-                    { label: "Block Adult Sites", href: "/Block-Porn" },
+                    { label: "Block Apps",  href: "/App-Blocks" },
+                    { label: "Block Adult Sites",  href: "/Block-Porn" },
                 ],
             },
             {
                 title: "Activity Monitor",
                 links: [
-                    { label: "Web Filtering", href: "/Web-filtering" },
-                    { label: "Phone Monitoring", href: "/Phone-monitering" },
+                    { label: "Web Filtering",  href: "/Web-filtering" },
+                    { label: "Phone Monitoring",  href: "/Phone-monitering" },
                     { label: "Teen Sexting", href: "/Teen-Sexing" },
                     { label: "Anti Bullying", href: "/Anti-Billing" },
                 ],
@@ -567,9 +587,9 @@ export const translations = {
             {
                 title: "Parenting Knowledge",
                 links: [
-                    { label: "Parenting Tips", href: "/Parenting-Tips" },
-                    { label: "Teen Slang", href: "/Teen-Slang" },
-                    { label: "Trending Apps", href: "/Trainding-AppRivew" },
+                    { label: "Parenting Tips",  href: "/Parenting-Tips" },
+                    { label: "Teen Slang",  href: "/Teen-Slang" },
+                    { label: "Trending Apps",  href: "/Trainding-AppRivew" },
                     { label: "ParentalApp control", href: "/Parental-App-control " },
                 ],
             },
@@ -588,7 +608,7 @@ export const translations = {
                     { label: "Block Porns", href: "/Block-Porn" },
                     { label: "Stop Sextortion", href: "/Compagin-Stops" },
                     { label: "AI Concerns Activity", href: "/Artifical-Intelligence" },
-                    { label: "Stop Cyberbullying", href: "#" },
+                    { label: "Stop Cyberbullying", href: "/Stop-Cyberbullying" },
                     { label: "Teen Sexting", href: "/Teen-Sexting" },
                 ],
             },
@@ -596,10 +616,10 @@ export const translations = {
             guide: {
                 title: "FamiSafe Guide",
                 items: [
-                    { label: "User Guide", href: "/User-Guide" },
+                    { label: "User Guide",  href: "/User-Guide" },
                     { label: "User Guide for School", href: "/User-Guide-For-School" },
                     { label: "Video Guide", href: "/Video-Guide" },
-                    { label: "User FAQs", href: "/User-FAQS" },
+                    { label: "User FAQs",href: "/User-FAQS" },
                 ],
             },
 
@@ -607,11 +627,11 @@ export const translations = {
                 title: "Explore",
                 items: [
                     { label: "What is News", href: "/What-is-News" },
-                    { label: "Parents Review", href: "/Parental-Review" },
-                    { label: "Brand Campaigns", href: "/Campaigns" },
-                    { label: "Media Review", href: "/Midea-Reviw" },
-                    { label: "Annual Report", href: "/Annual-Report" },
-                    { label: "Family Stories", href: "/Family-Stories" },
+                    { label: "Parents Review",  href: "/Parental-Review" },
+                    { label: "Brand Campaigns",  href: "/Campaigns" },
+                    { label: "Media Review",  href: "/Midea-Reviw" },
+                    { label: "Annual Report",  href: "/Annual-Report" },
+                    { label: "Family Stories",  href: "/Family-Stories" },
 
                 ],
             },
@@ -4902,7 +4922,7 @@ export const translations = {
         Trustedby47GGFmillions: "በሚሊዮኖች የታመነ፣ FamiSafe ወላጆች የልጆቻቸውን ዲጂታል ህይወት እንዲቆጣጠሩ ይረዳል። አሁን እቅድዎን ይምረጡ!",
         Yearly: "ዓመታዊ",
         moNTH: "/ወር",
-        $59billedannually: "$59.9 በዓመት ይከፈላል",
+        $59billedannually: "ETB 17,999 በዓመት ይከፈላል",
         Unlockallpremiumeatures: "ሁሉንም ፕሪሚየም ባህሪያት ይክፈቱ",
         BestVal988ue: "ምርጥ ዋጋ",
         Seeallpl232R34ans: "ሁሉንም እቅዶች ይመልከቱ",
@@ -5415,19 +5435,22 @@ export const translations = {
                 desc: "የወላጅ መቆጣጠሪያ መፍትሄ",
                 img: '/assets/images/icons/home-icon.svg',
                 primary: true,
-                href: "#", // Official FamiSafe
+                href: "/famisafe", // Official FamiSafe
             },
+
             {
-                title: "ፋሚሴፍ ለትምህርት ቤቶች",
+                title: "FamiSafe for School, ",
                 desc: "School & Parent Sync",
-                img: '/assets/images/icons/school-icon.svg',
-                href: "https://famisafe.wondershare.com/school/", // School link
+                img: 'https://famisafe.wondershare.com/images/images-2025/famisafe/school-icon.svg',
+                href: "/school", // School link
+                target: "_blank",
             },
             {
                 title: "የቦታ ቀጥታ ማጋራት",
                 desc: "የቦታ ቀጥታ መካፈል",
                 img: '/assets/images/icons/geonection-icon.svg',
                 href: "https://geonection.com/", // Geonection link
+                target: "_blank",
             },
         ],
         // products dropdown end
@@ -5438,12 +5461,12 @@ export const translations = {
                 title: "የመሣሪያ እንቅስቃሴ",
                 bg: "#f5f1ff",
                 features: [
-                    { title: "ጥሪዎች እና መልዕክቶች", newTag: true, link: "/Call-meassage" },
-                    { title: "የስክሪን ጊዜ", newTag: true, link: "/Screen-Time" },
-                    { title: "የስክሪን እይታ", link: "/Screen-Viewer" },
+                    { title: "ጥሪዎች እና መልዕክቶች", target: "_blank", newTag: true, link: "/Call-meassage" },
+                    { title: "የስክሪን ጊዜ", target: "_blank", newTag: true, link: "/Screen-Time" },
+                    { title: "የስክሪን እይታ", target: "_blank", link: "/Screen-Viewer" },
                     { title: "የመተግበሪያ ህጎች", link: "/AppRole" },
-                    { title: "አንድ-አቅጣጫ ድምፅ", newTag: true, link: "/One-way-Audio" },
-                    { title: "የእንቅስቃሴ ሪፖርት", link: "/Activity-Report" },
+                    { title: "አንድ-አቅጣጫ ድምፅ", target: "_blank", newTag: true, link: "/One-way-Audio" },
+                    { title: "የእንቅስቃሴ ሪፖርት", target: "_blank", link: "/Activity-Report" },
                 ],
             },
             {
@@ -5482,38 +5505,38 @@ export const translations = {
             {
                 title: "የስክሪን ጊዜ",
                 links: [
-                    { label: "የስክሪን ጊዜ ቁጥጥር", href: "/Screen-Time-Blogs" },
-                    { label: "የiOS የወላጅ ቁጥጥር", href: "/Ios-Parental-Controller" },
-                    { label: "የAndroid የወላጅ ቁጥጥር", href: "/Andriod-Parental-Controller" },
-                    { label: "የዴስክቶፕ ቁጥጥር", href: "/DeskTop-Parental-Controller" },
-                    { label: "የChromebook ቁጥጥር", href: "/ChromeBook-Controller" },
+                    { label: "የስክሪን ጊዜ ቁጥጥር", target: "_blank", href: "/Screen-Time-Blogs" },
+                    { label: "የiOS የወላጅ ቁጥጥር", target: "_blank", href: "/Ios-Parental-Controller" },
+                    { label: "የAndroid የወላጅ ቁጥጥር", target: "_blank", href: "/Andriod-Parental-Controller" },
+                    { label: "የዴስክቶፕ ቁጥጥር", target: "_blank", href: "/DeskTop-Parental-Controller" },
+                    { label: "የChromebook ቁጥጥር", target: "_blank", href: "/ChromeBook-Controller" },
                 ],
             },
             {
                 title: "አፕ መከላከያ",
                 links: [
-                    { label: "ጨዋታዎችን አግድ", href: "/Block-Game" },
-                    { label: "YouTube አግድ", href: "/Block-Youtube" },
-                    { label: "መተግበሪያዎችን አግድ", href: "/App-Blocks" },
-                    { label: "የአዋቂ ድረ-ገፆችን አግድ", href: "/Block-Porn" },
+                    { label: "ጨዋታዎችን አግድ", target: "_blank", href: "/Block-Game" },
+                    { label: "YouTube አግድ", target: "_blank", href: "/Block-Youtube" },
+                    { label: "መተግበሪያዎችን አግድ", target: "_blank", href: "/App-Blocks" },
+                    { label: "የአዋቂ ድረ-ገፆችን አግድ", target: "_blank", href: "/Block-Porn" },
                 ],
             },
             {
                 title: "የእንቅስቃሴ ክትትል",
                 links: [
-                    { label: "የድህረገጽ ማጣሪያ", href: "/Web-filtering" },
-                    { label: "የስልክ ክትትል", href: "/Phone-monitering" },
-                    { label: "የታዳጊዎች ሴክስቲንግ", href: "/Teen-Sexting" },
-                    { label: "አንቲ-ቡሊንግ", href: "/Anti-Billing" },
+                    { label: "የድህረገጽ ማጣሪያ", target: "_blank", href: "/Web-filtering" },
+                    { label: "የስልክ ክትትል", target: "_blank", href: "/Phone-monitering" },
+                    { label: "የታዳጊዎች ሴክስቲንግ", target: "_blank", href: "/Teen-Sexting" },
+                    { label: "አንቲ-ቡሊንግ", target: "_blank", href: "/Anti-Billing" },
                 ],
             },
             {
                 title: "የወላጅነት እውቀት",
                 links: [
-                    { label: "የወላጅነት ምክሮች", href: "/Parenting-Tips" },
-                    { label: "የታዳጊ ስላንግ", href: "/Teen-Slang" },
-                    { label: "ታዋቂ መተግበሪያዎች", href: "/Trainding-AppRivew" },
-                    { label: "የወላጅ መተግበሪያ ቁጥጥር", href: "/Parental-App-control " },
+                    { label: "የወላጅነት ምክሮች", target: "_blank", href: "/Parenting-Tips" },
+                    { label: "የታዳጊ ስላንግ", target: "_blank", href: "/Teen-Slang" },
+                    { label: "ታዋቂ መተግበሪያዎች", target: "_blank", href: "/Trainding-AppRivew" },
+                    { label: "የወላጅ መተግበሪያ ቁጥጥር", target: "_blank", href: "/Parental-App-control " },
                 ],
             },
             {
@@ -5527,12 +5550,12 @@ export const translations = {
             featuredTopics: {
                 title: "ተመራጭ ርዕሶች",
                 items: [
-                    { label: "የስክሪን ጊዜን ማመጣጠን", href: "/Screentime-For-Kids" },
-                    { label: "የዲጂታል ልጆች ደህንነት", href: "/Internet-Safty" },
-                    { label: "ፖርን አግድ", href: "/Block-Porn" },
-                    { label: "ሴክስቶርሽንን አቁም", href: "/Compagin-Stops" },
-                    { label: "የAI አደጋ እንቅስቃሴ", href: "/Artifical-Intelligence" },
-                    { label: "ሳይበር ቡሊንግን አቁም", href: "#" },
+                    { label: "የስክሪን ጊዜን ማመጣጠን", target: "_blank", href: "/Screentime-For-Kids" },
+                    { label: "የዲጂታል ልጆች ደህንነት", target: "_blank", href: "/Internet-Safty" },
+                    { label: "ፖርን አግድ", target: "_blank", href: "/Block-Porn" },
+                    { label: "ሴክስቶርሽንን አቁም", target: "_blank", href: "/Compagin-Stops" },
+                    { label: "የAI አደጋ እንቅስቃሴ", target: "_blank", href: "/Artifical-Intelligence" },
+                    { label: "ሳይበር ቡሊንግን አቁም", target: "_blank", href: "#" },
                     { label: "የታዳጊዎች ሴክስቲንግ", href: "/Teen-Sexting" },
                 ],
             },
@@ -5540,22 +5563,22 @@ export const translations = {
             guide: {
                 title: "የFamiSafe መመሪያ",
                 items: [
-                    { label: "የተጠቃሚ መመሪያ", href: "/User-Guide" },
-                    { label: "የት/ቤት መመሪያ", href: "/User-Guide-For-School" },
-                    { label: "የቪዲዮ መመሪያ", href: "/Video-Guide" },
-                    { label: "የተጠቃሚ ጥያቄዎች (FAQ)", href: "/User-FAQS" },
+                    { label: "የተጠቃሚ መመሪያ", target: "_blank", href: "/User-Guide" },
+                    { label: "የት/ቤት መመሪያ", target: "_blank", href: "/User-Guide-For-School" },
+                    { label: "የቪዲዮ መመሪያ", target: "_blank", href: "/Video-Guide" },
+                    { label: "የተጠቃሚ ጥያቄዎች (FAQ)", target: "_blank", href: "/User-FAQS" },
                 ],
             },
 
             explore: {
                 title: "ያስሱ",
                 items: [
-                    { label: "አዲስ ዜናዎች", href: "/What-is-News" },
-                    { label: "የወላጆች ግምገማ", href: "/Parental-Review" },
-                    { label: "የብራንድ ካምፔኖች", href: "/Campaigns" },
-                    { label: "የሚዲያ ግምገማ", href: "/Midea-Reviw" },
-                    { label: "ዓመታዊ ሪፖርት", href: "/Annual-Report" },
-                    { label: "የቤተሰብ ታሪኮች", href: "/Family-Stories" },
+                    { label: "አዲስ ዜናዎች", target: "_blank", href: "/What-is-News" },
+                    { label: "የወላጆች ግምገማ", target: "_blank", href: "/Parental-Review" },
+                    { label: "የብራንድ ካምፔኖች", target: "_blank", href: "/Campaigns" },
+                    { label: "የሚዲያ ግምገማ", target: "_blank", href: "/Midea-Reviw" },
+                    { label: "ዓመታዊ ሪፖርት", target: "_blank", href: "/Annual-Report" },
+                    { label: "የቤተሰብ ታሪኮች", target: "_blank", href: "/Family-Stories" },
                 ],
             },
 
@@ -9654,6 +9677,215 @@ export const translations = {
 
     // Oromo - Oromiffa
     om: {
+        // New  home ///
+        Wonde443rshareFa: "Wondershare Famisafe V9.0 jedhamuun beekama",
+        AIPare456ntalControl: "To'annoo Warra AI",
+        forSo765cial: "Nageenya ",
+        MediaSa86fety: "Miidiyaa  Hawaasaa",
+        Keepaney45eon3: "Appii hawaasummaa 30+ hordofaa balaa dafanii qabadhaa.",
+        AIpowere645dprotectionfo: "Jireenya dijitaalaa daa’ima keessaniif eegumsa AIn hojjetu-hordoffii miidiyaa hawaasaa, bulchiinsa yeroo iskiriinii, fi hordoffii bakka appii tokko keessatti.",
+        YourProfessional: "Digital Parenting'f kan qophaa'e,",
+        MainTitle: "AI'n kan hojjetu",
+        SocialAppsDetection: "Appilikeeshiniiwwan Hawaasaa Adda baasuu",
+        CatchHiddenRisk: "Balaa Dhokataa Miidiyaa Hawaasaa Irraa Qabadhaa",
+        AIscans30appsli: "AI apps 30+ kan akka TikTok & Instagram scan godhee bullying, predators, fi qabiyyee miidhaa geessisu dursee adda ba'a.",
+        AIDetection: "AI-Adda baasuu",
+        Support30Apps: "Appilikeeshinii 30+ deeggaru",
+        StartFreeTrial: "Yaali Bilissa Jalqabi",
+        LearnMore: "Caalaatti Baruuf",
+        feature6s: [
+            {
+                mainTitle: "To'annoo Yeroo Iskiriinii",
+                subtitle: "Lola Malee Mucaa Keessaniif Daangaa Kaa'aa",
+                description:
+                    "Daangaa yeroo iskiriinii, sagantaa, fi gabaasa itti fayyadama bal’aa ta’een amala dijitaalaa fayya qabeessa ta’e ijaari.",
+                button1: "Yaali Bilissa Jalqabi",
+                button2: "Caalaatti Baruuf",
+                imageSrc:
+                    "https://famisafe.wondershare.com/images/images-2025/new-index/screen-time-usage-report-img.png",
+                featureIcons: [
+                    { icon: BsClockFill, title: "Daily Limits" },
+                    { icon: TiMessages, title: "Usage Report" },
+                ],
+            },
+            {
+                mainTitle: "Hordoffii Bakka",
+                subtitle: "Bakka Mucaa Keessan Yaaddoo Malee Hordofaa",
+                description:
+                    "Ijoolleen keessan eessa akka jiran hordoffii GPS kallattiin, seenaa bakka, fi akeekkachiisa ji'oofeensiin beekaa.",
+                button1: "Yaali Bilissa Jalqabi",
+                button2: "Caalaatti Baruuf",
+                imageSrc:
+                    "https://famisafe.wondershare.com/images/images-2025/new-index/location-tracking-img.png",
+                featureIcons: [
+                    { icon: TiLocation, title: "Real-time GPS" },
+                    { icon: IoShieldCheckmark, title: "Safe Zone" },
+                ],
+            },
+        ],
+        ExploreMoreParental: "Amaloota To'annoo ",
+        ControlFeatures: "Warraa Dabalataaf Qoradhu",
+        feaxturess: [
+            { id: 1, title: "Bilbilaa fi Ergaa", desc: "Galmee bilbilaa fi ergaawwan hordofuun balaa ta’uu danda’an yookaan qabiyyee hin malle adda baasuuf.", image: "https://famisafe.wondershare.com/images/images-2025/new-index/calls-messages-bg.jpg", url: "https://famisafe.wondershare.com/main/sign-up" },
+
+            { id: 2, title: "To’annoo Yeroo Screenii", desc: "Yeroo screenii guyyaa guyyaan murteessuun fi sagantaa qopheessuun fayyadama dijitaalaa fayya qabeessa taasisuuf.", image: "https://famisafe.wondershare.com/images/images-2025/new-index/screen-time-bg.jpg", url: "https://famisafe.wondershare.com/main/sign-up" },
+
+            { id: 3, title: "Ilaalcha Screenii", desc: "Screenii bilbilaa ijoollee kee yeroo dhugaa yookaan sagantaadhaan ilaaluun sochii isaanii hordofuuf.", image: "https://famisafe.wondershare.com/images/images-2025/new-index/screen-viewer-bg.jpg", url: "https://famisafe.wondershare.com/main/sign-up" },
+
+            { id: 4, title: "Seerota Appii", desc: "Appoota murtaa’an cufuu yookaan hayyamuu danda’uun jeequmsa ittisuuf fi itti fayyadama sirrii mirkaneessuuf.", image: "https://famisafe.wondershare.com/images/images-2025/new-index/app-rules-bg.jpg", url: "https://famisafe.wondershare.com/main/sign-up" },
+
+            { id: 5, title: "Sagalee Karaa Tokko", desc: "Naannoo bilbilaa ijoollee kee dhaggeeffachuun nageenya isaanii mirkaneessuuf.", image: "https://famisafe.wondershare.com/images/images-2025/new-index/one-way-audio-bg.jpg", url: "https://famisafe.wondershare.com/main/sign-up" },
+
+            { id: 6, title: "Gabaasa Sochii", desc: "Gabaasa bal’aa waa’ee fayyadama bilbilaa fi sochii appii ijoollee kee argachuuf.", image: "https://famisafe.wondershare.com/images/images-2025/new-index/activity-report-bg.jpg", url: "https://famisafe.wondershare.com/main/sign-up" },
+
+            { id: 7, title: "To’annoo Maatii YouTube", desc: "Seenaa daawwannaa YouTube ijoollee kee hordofuun fi qabiyyee hin malle ittisuuf.", image: "https://famisafe.wondershare.com/images/images-2025/new-index/youtube-parental-control-bg.jpg", url: "https://famisafe.wondershare.com/main/sign-up" },
+
+            { id: 8, title: "Seenaa TikTok", desc: "Seenaa daawwannaa TikTok ijoollee kee hordofuun qabiyyee umurii isaanii waliin walsimu mirkaneessuuf.", image: "https://famisafe.wondershare.com/images/images-2025/new-index/tiktok-history-bg.jpg", url: "https://famisafe.wondershare.com/main/sign-up" },
+
+            { id: 9, title: "Suuraalee Hin Malle", desc: "Suuraalee sirrii hin taane adda baasuun si beeksisu (iPhone yookaan Android irratti).", image: "https://famisafe.wondershare.com/images/images-2025/new-index/inappropriate-pictures-bg.jpg", url: "https://famisafe.wondershare.com/main/sign-up" },
+
+            { id: 10, title: "Argannoo Appii Hawaasaa", desc: "Appoota hawaasaa 30 ol hordofuun jechoota shakkisiisoo ofii keetiin qopheessuuf.", image: "https://famisafe.wondershare.com/images/images-2025/new-index/social-app-detection-bg.jpg", url: "https://famisafe.wondershare.com/main/sign-up" },
+
+            { id: 11, title: "Filterii Weebsaayitii", desc: "Weebsaayitii hin malle cuqaasa tokkoon ugguruun daawwannaa nageenya qabu mirkaneessuuf.", image: "https://famisafe.wondershare.com/images/images-2025/new-index/web-filter-bg.jpg", url: "https://famisafe.wondershare.com/main/sign-up" },
+
+            { id: 12, title: "Gabaasa Oofinsa", desc: "Amala oofinsa ijoollee kee akka saffisa fi karaa deemaa hordofuu fi galmeessuuf.", image: "https://famisafe.wondershare.com/images/images-2025/new-index/driving-report-bg.jpg", url: "https://famisafe.wondershare.com/main/sign-up" },
+
+            { id: 13, title: "Hordoffii Iddoo", desc: "Iddoo ijoollee kee yeroo dhugaa hordofuu, seenaa ilaalu fi naannoo nageenyaaf akeekkachiisa argachuuf.", image: "https://famisafe.wondershare.com/images/images-2025/new-index/location-tracking-bg.jpg", url: "https://famisafe.wondershare.com/main/sign-up" },
+
+            { id: 15, title: "Akeekkachiisa SOS", desc: "Ijoolleen kee yeroo hatattamaa iddoo isaanii waliin akeekkachiisa erguu danda’u.", image: "https://famisafe.wondershare.com/images/images-2025/new-index/sos-alert-bg.jpg" },
+        ],
+        Your: "Maatii",
+        plan: "Keessan",
+        Family: "Filadhaa ",
+        Choose: "Karoora",
+        Trustedby47GGFmillions: "FamiSafe miliyoonaan kan amanamu yoo ta'u, warri jireenya dijitaalaa ijoollee isaanii akka bulchan gargaara. Karoora kee amma filadhu!",
+        Yearly: "Waggaa waggaan",
+        moNTH: "/mo",
+        $59billedannually: "Waggaatti ETB 17,999 kaffalama",
+        Unlockallpremiumeatures: "Amaloota premium hunda banaa",
+        BestVal988ue: "Best Value",
+        Seeallpl232R34ans: "Amma Bitadhaa",
+        featureds: [
+            "Yeroo screenii to’achuu",
+            "Akeekkachiisa suuraalee miidhaa qaban",
+            "Seenaa barbaacha weebsaayitii hordofuu",
+            "Iddoo yeroo dhugaa hordofuu fi seenaa ilaalu",
+            "Appoota hawaasaa akka WhatsApp, YouTube fi kkf hordofuu",
+            "Bilbilaa, ergaa fi email hordofuu",
+            "Seenaa chat fi screenshot appii hordofuu",
+            "Sagalee naannoo ijoollee jiru hordofuu",
+            "Weebsaayitii fi appoota ugguruu",
+            "Geofence uumuu fi akeekkachiisa SOS erguu",
+        ],
+        Real: "Maatii",
+        Families: "Dhugaa ",
+        Reals: "Seenaa",
+        Stories: "Dhugaa",
+        Explorerealtorie: "Seenaa dhugaa 35+ maatii addunyaa mara irraa qoradhuu fi akkaataa isaan FamiSafe fayyadamuun ijoollee isaanii toora interneetii irratti nageenya isaanii eeguuf baradhu.",
+
+        featuresse: [
+            { id: 1, title: "Tarkaanfii Hunda Hordofuu Gara Manaatti", desc: "Galmee bilbilaa fi ergaawwan hordofuun balaa ta’uu danda’an yookaan qabiyyee hin malle adda baasuuf.", image: "https://famisafe.wondershare.com/images/images-2025/new-index/location-tracking.jpg", url: "https://famisafe.wondershare.com/main/sign-up" },
+
+            { id: 2, title: "To’annoo Yeroo Screenii", desc: "Yeroo screenii guyyaa guyyaan murteessuun fi sagantaa qopheessuun fayyadama dijitaalaa fayya qabeessa taasisuuf.", image: "https://famisafe.wondershare.com/images/images-2025/new-index/social-app-monitoring.jpg", url: "https://famisafe.wondershare.com/main/sign-up" },
+
+            { id: 3, title: "Ilaalcha Screenii", desc: "Screenii bilbilaa ijoollee kee yeroo dhugaa yookaan sagantaadhaan ilaaluun sochii isaanii hordofuuf.", image: "https://famisafe.wondershare.com/images/images-2025/new-index/app-blocking.jpg", url: "https://famisafe.wondershare.com/main/sign-up" },
+
+            { id: 4, title: "Seerota Appii", desc: "Appoota murtaa’an cufuu yookaan hayyamuu danda’uun jeequmsa ittisuuf fi itti fayyadama sirrii mirkaneessuuf.", image: "https://famisafe.wondershare.com/images/images-2025/new-index/social-app-monitoring.jpg", url: "https://famisafe.wondershare.com/main/sign-up" },
+
+            { id: 5, title: "Sagalee Karaa Tokko", desc: "Naannoo bilbilaa ijoollee kee dhaggeeffachuun nageenya isaanii fi iccitii isaanii eeguu mirkaneessuuf.", image: "https://famisafe.wondershare.com/images/images-2025/new-index/screen-time.jpg", url: "https://famisafe.wondershare.com/main/sign-up" },
+        ],
+        viewallstries: "Seenaa Hundaa llaali",
+
+        daata: [
+            {
+                icon: "FaBuilding",
+                value: 200,
+                suffix: "+",
+                label: "Biyyoota",
+                bg: "bg-blue-100",
+                iconSize: "text-5xl",
+            },
+            {
+                icon: "FaUsers",
+                value: 35,
+                suffix: "M+",
+                label: "Fayyadamtoota",
+                bg: "bg-teal-100",
+                iconSize: "text-5xl",
+            },
+            {
+                icon: "BiSolidHomeHeart",
+                value: 18,
+                suffix: "K+",
+                label: "Maatiiwwan",
+                bg: "bg-orange-100",
+                iconSize: "text-5xl",
+            },
+            {
+                icon: "CiBookmarkCheck",
+                value: 15,
+                suffix: "K+",
+                label: "Subscribers",
+                bg: "bg-blue-100",
+                iconSize: "text-5xl",
+            },
+        ],
+        what: "What",
+        parenties: "Parentie",
+        aresaying: "are sying",
+        Realfeedbacksf: "Real feedbacks from parents who use FamiSafe around the world.",
+        // 1️⃣ Declare your reviews first
+        reviqews: [
+  {
+    id: 1,
+    name: "Emily",
+    date: "Dec 06, 2025",
+    score: 4.5,
+    description: "Appii FamiSafe argachuu koo irratti baay’ee gammadeera. Ergaawwan shakkisiisoo tokko tokko chaatii garee intala koo keessatti argate — ani hin argine ture. Haasawa cimaa goone, garuu yeroo duraa qabanneerra. Baay’ee nan gorsa!",
+    image: "https://famisafe.wondershare.com/images/images-2025/new-index/user1.png",
+    features: { Chatmonitoring: 90, Riskdetection: 80, Realtimealerts: 85, Grouptracking: 70 },
+  },
+  {
+    id: 2,
+    name: "David",
+    date: "Mar 19, 2025",
+    score: 3.8,
+    description: "Dhugumaan, kun too’annoo maatii hojjetu dha. Ilmi koo waggaa 14 qaba, teeknooloojii baay’ee beeka, garuu Wondershare FamiSafe dhaabsisuu hin danda’u. Appoota biro duraan yaaleera — kun garuu sirriitti hojjetaa dha.",
+    image: "https://famisafe.wondershare.com/images/images-2025/new-index/user2.png",
+    features: { Chatmonitoring: 70, Riskdetection: 60, Realtimealerts: 80, Grouptracking: 75 },
+  },
+  {
+    id: 3,
+    name: "Jessica",
+    date: "Oct 22, 2025",
+    score: 4.9,
+    description: "Baay’ee nan gorsa! FamiSafe yeroo ijoolleen koo mana barumsaa dhiisan battalumatti na beeksisa. Karaa isaan gara manaatti deeman kaarta irratti sirriitti ilaaluun danda’a. Akka haadha kophaa ta’ee hojii fi jireenya walitti qabdu, appiin kun gatii isaa qaba.",
+    image: "https://famisafe.wondershare.com/images/images-2025/new-index/user3.png",
+    features: { Cleanliness: 95, Comfort: 90, Location: 95, Price: 85 },
+  },
+  {
+    id: 4,
+    name: "Robert",
+    date: "Jul 16, 2025",
+    score: 4.2,
+    description: "Wondershare FamiSafe duraan qabaachuun qaba ture jedheen yaada. Amma ilmi koo bilbila isaa irratti maal akka godhu sirriitti argu danda’a — appoota, YouTube, hundumaa. Amma tilmaamuun hin jiru. Amma seera screenii waliin murteessina.",
+    image: "https://famisafe.wondershare.com/images/images-2025/new-index/user4.png",
+    features: { Cleanliness: 85, Comfort: 75, Location: 80, Price: 70 },
+  },
+],
+        WorksGreat: "Works Great ",
+        withFamiSafe: "with FamiSafe",
+        WorksGreat: "FamiSafe waliin",
+        withFamiSafe: "Guddaa hojjeta",
+        JoinOur: "Hawaasa ",
+        Community: "Keenyattimakamaa",
+        StartPro35tecting:"Har'a Maatii",
+        Your32345FamilyToday: "Maatii Kee Har’a",
+        Join35millionfamil: "Maatii miliyoona 35 kanneen FamiSafe ijoollee isaanii toora interneetii irratti nageenya isaanii eeguuf amananitti makamaa. Bilisaa ta'ee yaalaa!", 
+
+
+
+        //End  New  home ///
         FamiSafe: "FamiSafee",
         PoweredbyAI: "AI’n kan deeggarame",
         ParentalControlApp: "Appii Too’annoo Warraa",
@@ -9920,107 +10152,131 @@ export const translations = {
             {
                 title: "FamiSafe🔥 👑",
                 desc: "Parental Control Solution",
-                img: "/assets/images/icons/home-icon.svg",
+                img: 'https://famisafe.wondershare.com/images/images-2025/famisafe/home-icon.svg',
                 primary: true,
-                href: "#", // Official FamiSafe
+                href: "/famisafe", 
             },
             {
-                title: "FamiSafe for School",
+                title: "FamiSafe for School, ",
                 desc: "School & Parent Sync",
-                img: "/assets/images/icons/school-icon.svg",
-                href: "#", // School link
+                img: 'https://famisafe.wondershare.com/images/images-2025/famisafe/school-icon.svg',
+                href: "/school", // School link
             },
             {
                 title: "Geonection",
                 desc: "Realtime Location Sharing",
-                img: "/assets/images/icons/geonection-icon.svg",
-                href: "#", // Geonection link
+                img: 'https://famisafe.wondershare.com/images/images-2025/famisafe/geonection-icon.svg',
+                href: "/Geonection", // Geonection link
             },
         ],
+//          cardss : [
+//   {
+//     title: "FamiSafe🔥 👑",
+//     desc: "Parental Control Solution",
+//     img: "https://famisafe.wondershare.com/images/images-2025/famisafe/home-icon.svg",
+//     primary: true,
+//     href: "/famisafe",
+//   },
+//   {
+//     title: "FamiSafe for School",
+//     desc: "School & Parent Sync",
+//     img: "https://famisafe.wondershare.com/images/images-2025/famisafe/school-icon.svg",
+//     href: "/school",
+//   },
+//   {
+//     title: "Geonection",
+//     desc: "Realtime Location Sharing",
+//     img: "https://famisafe.wondershare.com/images/images-2025/famisafe/geonection-icon.svg",
+//     href: "/Geonection",
+//   },
+// ],
+        // End products Driopdown
+
+        // features Dropdown
 
         columns: [
             {
                 title: "Device Activity",
                 bg: "#f5f1ff",
                 features: [
-                    { title: "Calls & Messages", newTag: true, link: "#" },
-                    { title: "Screen Time", newTag: true, link: "#" },
-                    { title: "Screen Viewer", link: "#" },
-                    { title: "App Rules", link: "#" },
-                    { title: "One-way Audio", newTag: true, link: "#" },
-                    { title: "Activity Report", link: "#" },
+                    { title: "Calls & Messages", newTag: true,  link: "/Call-meassage" },
+                    { title: "Screen Time", newTag: true,  link: "/Screen-Time" },
+                    { title: "Screen Viewer",  link: "/Screen-Viewer" },
+                    { title: "App Rules",  link: "/AppRole" },
+                    { title: "One-way Audio", newTag: true, link: "/One-way-Audio" },
+                    { title: "Activity Report", link: "/Activity-Report" },
                 ],
             },
             {
                 title: "Content Safety",
                 bg: "#fff8e9",
                 features: [
-                    { title: "YouTube Parental Control", link: "#" },
-                    { title: "TikTok History", link: "#" },
-                    { title: "Inappropriate Pictures", link: "#" },
-                    { title: "Social App Detection", link: "#" },
-                    { title: "Web Filter", link: "#" },
-                    { title: "Browser History", link: "#" },
+                    { title: "YouTube Parental Control",  link: "/youtube-parental-controls" },
+                    { title: "TikTok History",  link: "/tiktok-history" },
+                    { title: "Inappropriate Pictures", link: "/detect-suspicious-text" },
+                    { title: "Social App Detection",  link: "/block-websites" },
+                    { title: "Web Filter",  link: "/Web-Filter" },
+                    { title: "Browser History",  link: "/Browser-History" },
                 ],
             },
             {
                 title: "Location Service",
                 bg: "#f1ffef",
                 features: [
-                    { title: "Location Tracking", link: "#" },
-                    { title: "Driving Report", link: "#" },
-                    { title: "SOS Alert", newTag: true, link: "#" },
+                    { title: "Location Tracking",  link: "/Locaton-Tracking" },
+                    { title: "Driving Report",  link: "/Driving-Report" },
+                    { title: "SOS Alert", newTag: true, link: "/Sos-Alart" },
                 ],
             },
         ],
-        // features section end
+        // End features Dropdown
 
-        //Blog section
+        // Blog Dropdown
         blogData: [
             {
                 title: "Location Tracker",
                 links: [
-                    { label: "Mobile Tracker", href: "#" },
-                    { label: "Location Sharing", href: "#" },
-                    { label: "Family Tracker", href: "#" },
-                    { label: "Teen Driving", href: "#" },
+                    { label: "Mobile Tracker", href: "/Mobile-Tracking" },
+                    { label: "Location Sharing",  href: "/Location-Sharing" },
+                    { label: "Family Tracker",  href: "/Family-Tracking" },
+                    { label: "Teen Driving",  href: "/Teen-Driving" },
                 ],
             },
             {
                 title: "Screen Time",
                 links: [
-                    { label: "Screen Time Control", href: "#" },
-                    { label: "iOS Parental Control", href: "#" },
-                    { label: "Android Parental Control", href: "#" },
-                    { label: "Desktop Control", href: "#" },
-                    { label: "Chromebook Control", href: "#" },
+                    { label: "Screen Time Control", href: "/Screen-Time-Blogs" },
+                    { label: "iOS Parental Control", href: "/Ios-Parental-Controller" },
+                    { label: "Android Parental Control",  href: "/Andriod-Parental-Controller" },
+                    { label: "Desktop Control",  href: "/DeskTop-Parental-Controller" },
+                    { label: "Chromebook Control", href: "/ChromeBook-Controller" },
                 ],
             },
             {
                 title: "App Blocker",
                 links: [
-                    { label: "Block Games", href: "#" },
-                    { label: "Block YouTube", href: "#" },
-                    { label: "Block Apps", href: "#" },
-                    { label: "Block Adult Sites", href: "#" },
+                    { label: "Block Games",  href: "/Block-Game" },
+                    { label: "Block YouTube", href: "/Block-Youtube" },
+                    { label: "Block Apps",  href: "/App-Blocks" },
+                    { label: "Block Adult Sites",  href: "/Block-Porn" },
                 ],
             },
             {
                 title: "Activity Monitor",
                 links: [
-                    { label: "Web Filtering", href: "#" },
-                    { label: "Phone Monitoring", href: "#" },
-                    { label: "Teen Sexting", href: "#" },
-                    { label: "Anti Bullying", href: "#" },
+                    { label: "Web Filtering",  href: "/Web-filtering" },
+                    { label: "Phone Monitoring",  href: "/Phone-monitering" },
+                    { label: "Teen Sexting", href: "/Teen-Sexing" },
+                    { label: "Anti Bullying", href: "/Anti-Billing" },
                 ],
             },
             {
                 title: "Parenting Knowledge",
                 links: [
-                    { label: "Parenting Tips", href: "#" },
-                    { label: "Teen Slang", href: "#" },
-                    { label: "Trending Apps", href: "#" },
-                    { label: "App Reviews", href: "#" },
+                    { label: "Parenting Tips",  href: "/Parenting-Tips" },
+                    { label: "Teen Slang",  href: "/Teen-Slang" },
+                    { label: "Trending Apps",  href: "/Trainding-AppRivew" },
+                    { label: "ParentalApp control", href: "/Parental-App-control " },
                 ],
             },
             {
@@ -10028,53 +10284,51 @@ export const translations = {
                 cta: "Try It Free Online ☁️",
             }
         ],
-        //Blog section end
-
-        // Resource Dropdown Data
+        //RESPURCE DROPDOWN 
         resourceDropdownData: {
             featuredTopics: {
                 title: "Featured Topics",
                 items: [
-                    { label: "Digital Child Security", href: "#" },
-                    { label: "Block Porns", href: "#" },
-                    { label: "Balance Screen Time", href: "#" },
-                    { label: "Stop Sextortion", href: "#" },
-                    { label: "AI Concerns Activity", href: "#" },
-                    { label: "Stop Cyberbullying", href: "#" },
-                    { label: "Teen Sexting", href: "#" },
+                    { label: "Balance Screen Time", href: "/Screentime-For-Kids" },
+                    { label: "Digital Child Security", href: "/Internet-Safty" },
+                    { label: "Block Porns", href: "/Block-Porn" },
+                    { label: "Stop Sextortion", href: "/Compagin-Stops" },
+                    { label: "AI Concerns Activity", href: "/Artifical-Intelligence" },
+                    { label: "Stop Cyberbullying", href: "/Stop-Cyberbullying" },
+                    { label: "Teen Sexting", href: "/Teen-Sexting" },
                 ],
             },
 
             guide: {
                 title: "FamiSafe Guide",
                 items: [
-                    { label: "User Guide", href: "#" },
-                    { label: "User Guide for School", href: "#" },
-                    { label: "Video Guide", href: "#" },
-                    { label: "User FAQs", href: "#" },
+                    { label: "User Guide",  href: "/User-Guide" },
+                    { label: "User Guide for School", href: "/User-Guide-For-School" },
+                    { label: "Video Guide", href: "/Video-Guide" },
+                    { label: "User FAQs",href: "/User-FAQS" },
                 ],
             },
 
             explore: {
                 title: "Explore",
                 items: [
-                    { label: "Parents Review", href: "#" },
-                    { label: "Brand Campaigns", href: "#" },
-                    { label: "Media Review", href: "#" },
-                    { label: "Annual Report", href: "#" },
-                    { label: "Family Stories", href: "#" },
-                    { label: "Become Partner", href: "#" },
+                    { label: "What is News", href: "/What-is-News" },
+                    { label: "Parents Review",  href: "/Parental-Review" },
+                    { label: "Brand Campaigns",  href: "/Campaigns" },
+                    { label: "Media Review",  href: "/Midea-Reviw" },
+                    { label: "Annual Report",  href: "/Annual-Report" },
+                    { label: "Family Stories",  href: "/Family-Stories" },
+
                 ],
             },
 
             actions: {
                 downloadText: "Download App",
-                tryFreeText: "Try It Free Online ☁️",
+                tryFreeText: "Try It Free Online",
                 tryFreeLink: "#",
             },
         },
-
-        // Resource Dropdown Data end
+        // End RESPURCE DROPDOWN
 
         // testimonials
         testimonials: [
@@ -10437,6 +10691,38 @@ export const translations = {
         Stopendlessscreen: "Stop endless screen scrolling, start healthy habits.Track your kid's screen time usage in real time, setsdaily limits & bedtime schedules, and locks any device when it’s time for study or family moments.",
 
         awards: [
+            {
+                title: "The National Parenting Center",
+                subtitle: "WINNER",
+                image: "https://famisafe.wondershare.com/frontpage/icon-honour-1.png",
+            },
+            {
+                title: "The National Parenting Center",
+                subtitle: "WINNER",
+                image: "https://famisafe.wondershare.com/frontpage/icon-honour-2.png",
+            },
+            {
+                title: "Made For Mums Awards 2021",
+                subtitle: "BRONZE",
+                image: "https://famisafe.wondershare.com/frontpage/icon-honour-3.png",
+            },
+            {
+                title: "Mom's Choice Awards",
+                subtitle: "HONORING EXCELLENCE",
+                image: "https://famisafe.wondershare.com/frontpage/icon-honour-5.png",
+            },
+            {
+                title: "Parents’ Picks Awards 2024",
+                subtitle: "WINNER",
+                image: "https://famisafe.wondershare.com/frontpage/icon-honour-4.png",
+            },
+            {
+                title: "The National Parenting Center",
+                subtitle: "SEAL OF APPROVAL",
+                image: "https://famisafe.wondershare.com/frontpage/icon-honour-7.png",
+            },
+        ],
+        awardss: [
             {
                 title: "The National Parenting Center",
                 subtitle: "WINNER",
@@ -14193,6 +14479,12 @@ export const translations = {
                 image: "https://famisafe.wondershare.com/images/images-2024/semi-annual-report/part29-img-mobile.jpg",
             },
         ],
+        SecuredSharing: "Qooddii Nageenya Qabeessa",
+SeeLovedOnesat: "Namoota Jaallattan Argadhu",
+Hands: "Harka",
+Geonectionprotects: "Geonection bakka itti qooddatan icciitiidhaan (end-to-end encryption) eegda",
+
+TryitFrees: "Bilisa Yaali",
 
 
 

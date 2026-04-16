@@ -941,7 +941,7 @@ export default function Homes() {
             <div className="border bg-gradient-to-br from-[#99CAFF] via-[#E5F1FF] to-[#99CAFF] p-4 sm:p-6 rounded-[15px] flex flex-col justify-center items-center text-center h-56 sm:h-60">
               <p className="text-blue-600 font-semibold text-lg sm:text-base"> {language === "en" ? translations.en.Yearly : language === "am" ? translations.am.Yearly : language == "om" ? translations.om.Yearly : ""}</p>
               <h3 className="text-3xl sm:text-4xl font-bold my-1 sm:my-2">
-                $4.99 <span className="text-base font-normal">  {language === "en" ? translations.en.moNTH : language === "am" ? translations.am.moNTH : language == "om" ? translations.om.moNTH : ""}</span>
+                ETB 2399 <span className="text-base font-normal">  {language === "en" ? translations.en.moNTH : language === "am" ? translations.am.moNTH : language == "om" ? translations.om.moNTH : ""}</span>
               </h3>
               <p className="text-gray-500 mb-2 sm:mb-3 text-sm sm:text-base"> {language === "en" ? translations.en.$59billedannually : language === "am" ? translations.am.$59billedannually : language == "om" ? translations.om.$59billedannually : ""}</p>
               <p className="text-blue-500 text-xs sm:text-sm mb-4 sm:mb-6"> {language === "en" ? translations.en.Unlockallpremiumeatures : language === "am" ? translations.am.Unlockallpremiumeatures : language == "om" ? translations.om.Unlockallpremiumeatures : ""}</p>
@@ -982,7 +982,7 @@ export default function Homes() {
       </div>
       {/* End Choose Your Family Plan */}
       {/* //logo */}
-      <div className="overflow-hidden relative py-6 bg-white mt-4">
+      <div className="border overflow-hidden relative py-6 bg-white mt-4">
         <div className="flex animate-marquee whitespace-nowrap gap-1 md:gap-6">
           {awardds.concat(awardds).map((award, idx) => (
             <div

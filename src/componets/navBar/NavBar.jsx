@@ -1,21 +1,19 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCaretDown } from "@fortawesome/free-solid-svg-icons";
-import { Search } from "lucide-react";
 import { Download } from "lucide-react";
 import LanguageSwitcher from "../LanguageSwitcher";
 import { translations } from "../../Data/translations";
 import { useLanguage } from "../../context/LanguageContext";
-import { RiCloudLine } from "react-icons/ri";
-import { GrFormDown } from "react-icons/gr";
-import { useNavigate } from "react-router-dom";
-import { BsArrowRightShort } from "react-icons/bs";
-
+import { RiCloudLine, RiShoppingCartLine } from "react-icons/ri";
+import { GrDownload, GrFormDown } from "react-icons/gr";
+import { BsArrowRightShort, BsSearch } from "react-icons/bs";
+import { RxPerson } from "react-icons/rx";
 
 
 
 export default function NavBar() {
-  const navigate = useNavigate();
+  
 
   const [] = useState(0);
   const { language } = useLanguage();
@@ -36,11 +34,11 @@ export default function NavBar() {
   };
 
   return (
-    <header className="w-full bg-white border-b sticky top-0 z-50 shadow-sm">
+    <header className="fixed w-full bg-white border-b sticky top-0 z-50 left-0 h-16 shadow-sm">
       <div className=" w-full flex items-center justify-between px-6 py- md:px-35">
 
         {/* Logo */}
-        <a href="hero-section" className="flex items-center gap-2 text-xl font-bold text-gray-800 hover:opacity-90">
+        <a href="/" className="flex items-center gap-2 text-xl font-bold text-gray-800 hover:opacity-90">
           <img
             src="https://famisafe.wondershare.com/static/images/a6x/login/ic32-logo.png"
             alt="FamiSafe Logo"
@@ -144,21 +142,31 @@ export default function NavBar() {
           </div>
 
           {/* Buttons */}
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-2">
             <a
               href="https://famisafe.wondershare.com/main/sign-up"
               target="_blank"
               rel="noopener noreferrer"
-              className="border py-2 px-6 rounded-full bg-[#006DFF] text-white hover:bg-[#005FCC] font-medium hover:shadow-lg  transition"
+              className="py-2 px-3  text-black  font-medium"
             >
-              {language === "en" ? translations.en.TryItFree : language === "am" ? translations.am.TryItFree : language == "om" ? translations.om.TryItFree : ""}
+              {/* {language === "en" ? translations.en.TryItFree : language === "am" ? translations.am.TryItFree : language == "om" ? translations.om.TryItFree : ""} */}
+              <GrDownload className="w-6 h-6"/>
             </a>
 
             <a
               href="/Price"
-              className="py-2 px-6 rounded-full border-2 border-[#006DFF] text-[#006DFF] font-semibold"
+              className="py-2 px-3 rounded-full text-black font-semibold"
             >
-              {language === "en" ? translations.en.Pricing : language === "am" ? translations.am.Pricing : language == "om" ? translations.om.Pricing : ""}
+              <RiShoppingCartLine className="w-6 h-6"/>
+              {/* {language === "en" ? translations.en.Pricing : language === "am" ? translations.am.Pricing : language == "om" ? translations.om.Pricing : ""} */}
+            </a>
+
+            <a
+              href="/Loginpage"
+              className="py-2 px-3 rounded-full text-black font-semibold"
+            >
+              <RxPerson className="w-6 h-6"/>
+              {/* {language === "en" ? translations.en.Pricing : language === "am" ? translations.am.Pricing : language == "om" ? translations.om.Pricing : ""} */}
             </a>
 
             <a
@@ -166,7 +174,7 @@ export default function NavBar() {
               aria-label="Search"
               className="flex items-center justify-center w-10 h-10 "
             >
-              <Search size={18} strokeWidth={1.8} />
+              <BsSearch className="w-6 h-6" />
             </a>
             <div className="flex items-center mr-4">
               <div className="flex items-center gap-2 border border-gray-300 rounded-full px-4 py-2 bg-white hover:border-purple-500 hover:shadow-sm transition cursor-pointer">
@@ -224,7 +232,7 @@ export default function NavBar() {
 
       {/* Desktop Dropdown Panels */}
       {productOpen && (
-        <div onMouseEnter={() => setProductOpen(true)} onMouseLeave={() => setProductOpen(false)} className=" border absolute left-0 top-[3.5rem] w-full bg-white shadow-xl p-6 ">
+        <div onMouseEnter={() => setProductOpen(true)} onMouseLeave={() => setProductOpen(false)} className=" absolute left-0 top-[3.5rem] w-full bg-white shadow-xl p-6 ">
           <DropdownProducts />
         </div>
       )}
@@ -335,7 +343,7 @@ export default function NavBar() {
   );
 }
 
-// DropdownProducts component (desktop + mobile)
+//DropdownProducts component (desktop + mobile)
 function DropdownProducts({ mobile }) {
   const { language } = useLanguage(); // get current global language
 
@@ -356,7 +364,7 @@ function DropdownProducts({ mobile }) {
             href={item.href}
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-purple-50 rounded-3xl p-5 shadow-md flex items-center justify-between gap-4 hover:shadow-lg transition transform hover:-translate-y-1"
+            className="bg-[#EEF6FF] rounded-3xl p-5 shadow-md flex items-center justify-between gap-4 hover:shadow-lg transition transform hover:-translate-y-1"
           >
             <div className="flex items-center gap-4">
               <img src={item.img} alt={item.title} className="w-14 h-14 flex-shrink-0 " />
@@ -401,6 +409,94 @@ function DropdownProducts({ mobile }) {
     </div>
   );
 }
+// function DropdownProducts({ mobile }) {
+//   const navigate = useNavigate();
+//   const { language } = useLanguage();
+
+//  const cardss =
+//   language === "en"
+//     ? translations.en.cardss
+//     : language === "am"
+//     ? translations.am.cardss
+//     : language === "om"
+//     ? translations.om.cardss
+//     : [];
+
+//   return (
+//     <div className={`w-full ${mobile ? "bg-gray-50 p-4" : ""}`}>
+//       <div
+//         className={`grid gap-4 w-full ${
+//           mobile
+//             ? "grid-cols-1"
+//             : "grid-cols-1 sm:grid-cols-2 md:grid-cols-3 justify-center"
+//         }`}
+//       >
+//         {cardss.map((item, index) => (
+//           <Link
+//             key={index}
+//             to={item.href}
+//             className="bg-[#EEF6FF] rounded-2xl p-4 shadow-md flex items-center justify-between gap-3 
+//                        hover:shadow-lg transition transform hover:-translate-y-1
+//                        w-full max-w-xs mx-auto"
+//           >
+//             <div className="flex items-center gap-3">
+//               <img
+//                 src={item.img}
+//                 alt={item.title}
+//                 className="w-12 h-12 flex-shrink-0"
+//               />
+
+//               <div className="flex flex-col">
+//                 <h3 className="text-sm font-semibold text-gray-900">
+//                   {item.title}
+//                 </h3>
+
+//                 <p className="text-xs text-gray-600 mt-1 mb-2">
+//                   {item.desc}
+//                 </p>
+
+//                 {item.primary ? (
+//                   <span className="bg-gradient-to-r from-[#0075F6] to-blue-500 text-white text-xs text-center py-1.5 rounded-full px-5">
+//                     Try It Free
+//                   </span>
+//                 ) : (
+//                   <span className="border-2 border-[#0075F6] text-[#0075F6] text-xs text-center py-1.5 rounded-full px-5">
+//                     Try It Free
+//                   </span>
+//                 )}
+//               </div>
+//             </div>
+
+//             {/* Arrow Button */}
+//             <button
+//               type="button"
+//               onClick={(e) => {
+//                 e.preventDefault(); // prevent double navigation
+//                 navigate(item.href); // ✅ dynamic route
+//               }}
+//               className="border p-1 rounded-full border-[#0075F6] focus:ring-2 focus:ring-[#0076F6]"
+//             >
+//               <BsArrowRightShort className="bg-white rounded-full h-5 w-5 text-[#0075F6] p-1" />
+//             </button>
+//           </Link>
+//         ))}
+//       </div>
+
+//       {/* Bottom CTA */}
+//       {!mobile && (
+//         <div className="fixed bottom-10 left-0 w-full flex justify-center z-50">
+//           <button
+//             onClick={() => navigate("/famisafe")}
+//             className="bg-gradient-to-r from-teal-400 via-[#0075F6] to-teal-400 text-white text-lg font-semibold py-3 px-8 rounded-full flex items-center gap-2 hover:opacity-90 transition"
+//           >
+//             Try It Free Online <RiCloudLine />
+//           </button>
+//         </div>
+//       )}
+//     </div>
+//   );
+// }
+
 
 
 
@@ -584,7 +680,7 @@ function Sections({ title, items, grid }) {
 
 function SectionBox({ title, items, bg }) {
   return (
-    <div className={`${bg ? "bg-purple-50 rounded-3xl p-6" : ""}`}>
+    <div className={`${bg ? "bg-[#EEF6FF] rounded-3xl p-6" : ""}`}>
       <h3 className="text-xl font-semibold mb-4 text-gray-900">{title}</h3>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-3 gap-x-4 text-gray-800 text-[15px]">
         {items.map((item, idx) => (
@@ -661,5 +757,12 @@ function ResourceDropdown({ mobile }) {
 
 
 {/* mobile responsiveness */ }
+
+
+
+
+
+
+
 
 

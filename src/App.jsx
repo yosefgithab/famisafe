@@ -62,6 +62,7 @@ import Search from "./componets/navBar/search.jsx";
 import Pricing from "./componets/navBar/pricing.jsx";
 import Homes from "./Pages/Products/Famisafe/Homes.jsx";
 import PaymentPage from "./componets/navBar/PaymentPage.jsx";
+import LoginPage from "./componets/LoginPage.jsx";
 
 
 const app = () => {
@@ -72,7 +73,7 @@ const app = () => {
       <Routes>
         <Route element={<Header />} >
         <Route path="/" element={<Homes />} />
-          <Route index path="/famisafe" element={<Famisafe />} />
+          <Route path="/famisafe" element={<Famisafe />} />
           <Route path="/Search" element={<Search />} />
           <Route path="/Price" element={<Pricing />} />
           <Route path="/school" element={<ForScholl />} />
@@ -144,11 +145,14 @@ const app = () => {
           <Route path="/Annual-Report" element={<AnnualReport />} />
           <Route path="/Family-Stories" element={<FamilyStories />} />
           <Route path = "/PaymentPage" element= {<PaymentPage />} />
+          <Route path="/Loginpage" element={<LoginPage />} />
+           <Route index path="/Geonection" element={<Geonection />} />
+          <Route path="/QR-Code" element={<DownloadModal />} />
 
         </Route>
         <Route element={<Header1 />}>
-          <Route index path="Geonection" element={<Geonection />} />
-          <Route path="/QR-Code" element={<DownloadModal />} />
+          {/* <Route index path="Geonection" element={<Geonection />} />
+          <Route path="/QR-Code" element={<DownloadModal />} /> */}
 
         </Route>
       </Routes>
