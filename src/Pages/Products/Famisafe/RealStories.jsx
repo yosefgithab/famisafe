@@ -72,7 +72,7 @@ export default function StorySection() {
                             {/* Overlay */}
                             <div
                                 className={`absolute inset-0 transition duration-500
-                  ${isActive ? "bg-black/50" : "bg-black/25"}`}
+                  ${isActive ? "bg-black/0" : "bg-black/25"}`}
                             />
 
                             {/* TOP NAME + ROLE */}

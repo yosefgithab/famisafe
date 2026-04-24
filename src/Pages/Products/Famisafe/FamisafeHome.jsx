@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useLayoutEffect, useRef, useState } from "react";
 import { IoMdArrowDropleft, IoMdArrowDropright } from "react-icons/io";
 
 import { useEffect } from "react";
@@ -7,18 +7,69 @@ import {
     FaWindows,
 } from "react-icons/fa";
 import { translations } from "../../../Data/translations";
-import { MdOutlineKeyboardArrowRight } from "react-icons/md";
+import { MdOutlineKeyboardArrowRight, MdPhoneIphone } from "react-icons/md";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useLanguage } from "../../../context/LanguageContext";
 import { BsAndroid2, BsFillCloudFill } from "react-icons/bs";
 import { SiGooglechrome } from "react-icons/si";
-import { TypeAnimation } from "react-type-animation";
+import gsap from "gsap";
 
 export default function HeroSection() {
     const CARD_WIDTH = 380;
     const AUTO_DELAY = 4000; // 4 seconds
     const [current, setCurrent] = useState(0);
     const { language } = useLanguage();
+      const imgRef = useRef(null);
+      const agentRef = useRef(null);
+    
+      useLayoutEffect(() => {
+        if (!imgRef.current || !agentRef.current) return;
+    
+        const ctx = gsap.context(() => {
+    
+          gsap.from(imgRef.current, {
+            scale: 0.7,
+            opacity: 0,
+            duration: 1.2,
+            ease: "power3.out",
+            scrollTrigger: {
+              trigger: imgRef.current,
+              start: "top 85%",
+            },
+          });
+    
+          gsap.from(agentRef.current, {
+            y: 100,
+            opacity: 0,
+            duration: 1.2,
+            delay: 0.3,
+            ease: "power3.out",
+            scrollTrigger: {
+              trigger: imgRef.current,
+              start: "top 85%",
+            },
+          });
+    
+          gsap.to(agentRef.current, {
+            y: "-=20",
+            duration: 2,
+            repeat: -1,
+            yoyo: true,
+            ease: "sine.inOut",
+          });
+    
+          gsap.to(imgRef.current, {
+            y: 40,
+            scrollTrigger: {
+              trigger: imgRef.current,
+              scrub: true,
+            },
+          });
+    
+        });
+    
+        return () => ctx.revert();
+      }, []);
     const tabData = language === "en" ? translations.en.tabData : language === "am" ? translations.am.tabData : language == "om" ? translations.om.tabData : "";
 
 
@@ -96,188 +147,171 @@ export default function HeroSection() {
                 id="download-area"
             // className="border pt-12 sm:pt-16 lg:pt-20 pb-14 sm:pb-16 bg-gradient-to-br from-purple-50 to-indigo-50 overflow-hidden"
             >
-                <div className="bg-gradient-to-br from-[#9693FDFF] via-[#FEFEFEFF] to-[#E1DDFF] max-w-full mx-auto px-4 h-140 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
-
-                    {/* LEFT CONTENT */}
-                    <div className="text-center lg:text-left">
-                        <div className="flex justify-center lg:justify-start items-center gap-3 mb-3 flex-wrap">
+                <div className="bg-gradient-to-br from-[#DCEFFE] via-[#FEFEFEFF] to-[#D6E8FF] 
+                                max-w-full mx-auto px-4 sm:px-6 lg:px-8 
+                                grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
+                
+                        {/* LEFT CONTENT */}
+                        <div className="text-center lg:text-left">
+                          <div className="flex justify-center lg:justify-start items-center gap-3 mb-3 flex-wrap">
                             <span className="text-sm font-medium text-gray-700"></span>
-                            
+                
                             <span className="px-3 py-1 text-xs rounded-full bg-gradient-to-r from-purple-500 to-cyan-400 text-white">
-                              {language === "en" ? translations.en.FamiSafe : language === "am" ? translations.am.FamiSafe : language == "om" ? translations.om.FamiSafe : ""}  V8.9
+                              {language === "en" ? translations.en.Wonde443rshareFa : language === "am" ? translations.am.Wonde443rshareFa : language == "om" ? translations.om.Wonde443rshareFa : ""}
                             </span>
-                        </div>
-
-                        <h1 className="text-2xl sm:text-3xl md:text-4xl xl:text-5xl font-extrabold leading-tight">
-
-                            <span className="bg-gradient-to-r from-purple-500 via-blue-500 to-teal-400 bg-clip-text text-transparent">
-                                <TypeAnimation
-                                    sequence={[
-                                        language === "en"
-                                            ? translations.en.NextGen
-                                            : language === "am"
-                                                ? translations.am.NextGen
-                                                : language == "om" ? translations.om.NextGen : "",
-                                        2000,
-                                    ]}
-                                    speed={50}
-                                    cursor={true}
-                                    repeat={Infinity}
-                                />
-                            </span>
-
-                            <br />
-
-                            <span className="bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 bg-clip-text text-transparent">
-                                <TypeAnimation
-                                    sequence={[
-                                        language === "en"
-                                            ? translations.en.ParentalControlApp
-                                            : language === "am"
-                                                ? translations.am.ParentalControlApp
-                                                : language == "om" ? translations.om.ParentalControlApp : "",
-                                        2000,
-                                    ]}
-                                    speed={50}
-                                    cursor={false}
-                                    repeat={Infinity}
-                                />
-                            </span>
-
-                            <br />
-
-                            <span className="bg-gradient-to-r from-teal-400 via-blue-500 to-purple-500 bg-clip-text text-transparent">
-                                <TypeAnimation
-                                    sequence={[
-                                        language === "en"
-                                            ? translations.en.PoweredbyAI
-                                            : language === "am"
-                                                ? translations.am.PoweredbyAI
-                                                :language== "om" ? translations.om.PoweredbyAI : "",
-                                        2000,
-                                    ]}
-                                    speed={50}
-                                    cursor={false}
-                                    repeat={Infinity}
-                                />
-                            </span>
-
-                        </h1>
-
-                        <p className="mt-4 text-gray-600 max-w-xl text-sm sm:text-base mx-auto lg:mx-0">
+                          </div>
+                
+                          <div className="text-center mb-12">
+                            <h2 className="text-4xl md:text-5xl font-bold">
+                              <span className="animate-wordColor delay-0"> {language === "en" ? translations.en.AIPare456ntalControl : language === "am" ? translations.am.AIPare456ntalControl : language == "om" ? translations.om.AIPare456ntalControl : ""}  </span>{" "}
+                              <span className="animate-wordColor delay-3">{language === "en" ? translations.en.forSo765cial : language === "am" ? translations.am.forSo765cial : language == "om" ? translations.om.forSo765cial : ""}  </span>{" "}
+                              <span className="animate-wordColor delay-1">{language === "en" ? translations.en.MediaSa86fety : language === "am" ? translations.am.MediaSa86fety : language == "om" ? translations.om.MediaSa86fety : ""}  </span>{" "}
+                            </h2>
+                            <h2 className="mt-4 text-gray-700 text-lg sm:text-xl md:text-2xl font-extrabold max-w-xl mx-auto lg:mx-0 leading-relaxed">
+                              <span className="animate-wordColor delay-1">{language === "en" ? translations.en.Keepaney45eon3 : language === "am" ? translations.am.Keepaney45eon3 : language == "om" ? translations.om.Keepaney45eon3 : ""}  </span>{" "}
+                            </h2>
+                          </div>
+                
+                          <p className="mt-4 text-black max-w-xl text-sm sm:text-base mx-auto lg:mx-0">
                             {language === "en"
-                                ? translations.en.description
-                                : language === "am"
-                                    ? translations.am.description
-                                    :language== "om" ? translations.om.description : ""}
-                        </p>
-
-                        {/* Buttons */}
-                        <div className="mt-6 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start flex-wrap">
+                              ? translations.en.AIpowere645dprotectionfo
+                              : language === "am"
+                                ? translations.am.AIpowere645dprotectionfo
+                                : language == "om" ? translations.om.AIpowere645dprotectionfo : ""}
+                          </p>
+                
+                          {/* Buttons */}
+                          <div className="mt-6 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start flex-wrap">
                             <a
-                                href="https://famisafe.wondershare.com/main/sign-up"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="inline-flex items-center justify-center px-8 py-3 font-semibold text-white rounded-lg 
-                     bg-gradient-to-r from-purple-500 to-cyan-400 
-                     hover:from-purple-600 hover:to-cyan-500 
-                     transition-all duration-300 shadow-md hover:shadow-lg"
+                              href="https://famisafe.wondershare.com/main/sign-up"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="inline-flex items-center justify-center px-8 py-5 font-extrabold text-white rounded-[15px] 
+                                           bg-gradient-to-r from-blue-500 to-cyan-400 
+                                           hover:from-blue-600 hover:to-cyan-500 
+                                           transition-all duration-300 shadow-md hover:shadow-lg"
                             >
-                                {language === "en" ? translations.en.StartFreeTrial : language === "am" ? translations.am.StartFreeTrial : language == "om" ? translations.om.StartFreeTrial : ""}
+                              {language === "en" ? translations.en.StartFreeTrial : language === "am" ? translations.am.StartFreeTrial : language == "om" ? translations.om.StartFreeTrial : ""}
                             </a>
-
+                
                             <a
-                                href="#"
-                                className="inline-flex items-center justify-center px-6 py-3 rounded-lg border 
-                     border-purple-600 text-purple-600 font-semibold 
-                     hover:bg-purple-600 hover:text-white 
-                     transition-all duration-300"
+                              href="#"
+                              className="inline-flex items-center justify-center px-6 py-3 rounded-[15px] border 
+                                           b-blue-600 text-black-600 font-extrabold 
+                                           hover:bg-blue-600 hover:text-white 
+                                           transition-all duration-300"
                             >
-                                {language === "en" ? translations.en.BuyNow : language === "am" ? translations.am.BuyNow : language == "om" ? translations.om.BuyNow : ""}
+                              {language === "en" ? translations.en.BuyNow : language === "am" ? translations.am.BuyNow : language == "om" ? translations.om.BuyNow : ""}
                             </a>
-                        </div>
-
-                        {/* Platforms */}
-                        <div className="mt-6 flex justify-center lg:justify-start items-center gap-4 text-gray-500 text-sm flex-wrap">
+                          </div>
+                
+                          {/* Platforms */}
+                          <div className="mt-6 flex justify-center lg:justify-start items-center gap-4 text-gray-500 text-sm flex-wrap">
                             <span className="whitespace-nowrap"></span>
                             {language === "en" ? translations.en.Availableon : language === "am" ? translations.am.Availableon : language == "om" ? translations.om.Availableon : ""}
-
+                
                             <a
-                                href="https://play.google.com/store/apps/details?id=com.wondershare.famisafe&referrer=adjust_reftag%3DcTizxem82FnCz%26utm_source%3DWebsite%26utm_campaign%3Dfamisafe.wondershare.com%26utm_content%3Dfamisafe-index-en"
-                                target="_blank"
-                                rel="noopener noreferrer"
+                              href="https://play.google.com/store/apps/details?id=com.wondershare.famisafe&referrer=adjust_reftag%3DcTizxem82FnCz%26utm_source%3DWebsite%26utm_campaign%3Dfamisafe.wondershare.com%26utm_content%3Dfamisafe-index-en"
+                              target="_blank"
+                              rel="noopener noreferrer"
                             >
-                                <BsAndroid2 className="text-2xl hover:text-purple-600 transition" />
+                              <BsAndroid2 className="text-2xl hover:text-purple-600 transition" />
                             </a>
-
+                
                             <a
-                                href="https://apps.apple.com/us/app/famisafe-parental-control-app/id1385417904"
-                                target="_blank"
-                                rel="noopener noreferrer"
+                              href="https://apps.apple.com/us/app/famisafe-parental-control-app/id1385417904"
+                              target="_blank"
+                              rel="noopener noreferrer"
                             >
-                                <FaApple className="text-2xl hover:text-purple-600 transition" />
+                              <MdPhoneIphone className="text-2xl hover:text-purple-600 transition" />
                             </a>
-
+                
                             <a
-                                href="#"
-                                target="_blank"
-                                rel="noopener noreferrer"
+                              href="#"
+                              target="_blank"
+                              rel="noopener noreferrer"
                             >
-                                <FaWindows className="text-2xl hover:text-purple-600 transition" />
+                              <FaWindows className="text-2xl hover:text-purple-600 transition" />
                             </a>
-
+                
                             <a
-                                href="#"
-                                target="_blank"
-                                rel="noopener noreferrer"
+                              href="#"
+                              target="_blank"
+                              rel="noopener noreferrer"
                             >
-                                <SiGooglechrome className="text-2xl hover:text-purple-600 transition" />
+                              <SiGooglechrome className="text-2xl hover:text-purple-600 transition" />
                             </a>
-
+                
                             <a
-                                href="https://famisafe.wondershare.com/main/sign-up"
-                                target="_blank"
-                                rel="noopener noreferrer"
+                              href="https://famisafe.wondershare.com/main/sign-up"
+                              target="_blank"
+                              rel="noopener noreferrer"
                             >
-                                <BsFillCloudFill className="text-2xl hover:text-purple-600 transition" />
+                              <BsFillCloudFill className="text-2xl hover:text-purple-600 transition" />
                             </a>
-
+                
+                          </div>
                         </div>
-                    </div>
-
-
-                    {/* RIGHT IMAGE */}
-                    <div className="relative flex justify-center lg:justify-end">
-
-                        {/* Main Banner Image */}
-                        <img
+                
+                
+                        {/* RIGHT IMAGE */}
+                        <div className="relative flex justify-center items-center order-1 lg:order-2 overflow-hidden lg:overflow-visible mb-6 lg:mb-0">
+                 {/* MAIN IMAGE */}
+                    <img
+                      ref={imgRef}
+                      src="https://famisafe.wondershare.com/images/images-2025/new-index/banner-pc-img.png"
+                      alt="App Preview"
+                      className="
+                        w-full 
+                        max-w-[100%] 
+                        sm:max-w-[90%] 
+                        md:max-w-[420px] 
+                        xl:max-w-[520px] 
+                        h-auto 
+                        object-contain 
+                        drop-shadow-2xl
+                      "
+                    />
+                
+                    {/* OVERLAY IMAGE */}
+                    <img
+                      ref={agentRef}
+                      src="https://famisafe.wondershare.com/images/images-2025/new-index/banner-pc-agent.png"
+                      className="
+                        absolute 
+                        w-[55%] 
+                        top-[65%] 
+                        left-1/2 
+                        -translate-x-1/2 
+                        -translate-y-1/2 
+                        opacity-90 
+                        drop-shadow-xl 
+                        z-20
+                
+                        /* desktop only */
+                        lg:left-45 
+                        lg:top-75 
+                        lg:w-[45%] 
+                        lg:translate-x-0 
+                        lg:translate-y-0
+                      "
+                    />
+                          {/* <img
+                            ref={imgRef}
                             src="https://famisafe.wondershare.com/images/images-2025/new-index/banner-pc-img.png"
                             alt="App Preview"
-                            className="
-      w-full 
-      max-w-[180px] xs:max-w-[220px] sm:max-w-[340px] md:max-w-[420px] xl:max-w-[520px] 
-      drop-shadow-2xl
-    "
-                        />
-
-                        {/* Overlay Agent Image */}
-                        <img
+                            className="w-full max-w-[200px] xs:max-w-[240px] sm:max-w-[320px] md:max-w-[400px] xl:max-w-[520px] drop-shadow-2xl"
+                          />
+                
+                          {/* Overlay Image *
+                          <img
+                            ref={agentRef}
                             src="https://famisafe.wondershare.com/images/images-2025/new-index/banner-pc-agent.png"
-                            className="
-      absolute 
-      left-[30%] top-[60%] 
-      w-[40%] 
-      xs:left-[33%] xs:top-[62%] xs:w-[42%] 
-      sm:left-[35%] sm:top-[65%] sm:w-[44%]
-      opacity-90 
-      drop-shadow-xl 
-      z-20
-      lg:left-45 lg:top-75 lg:w-[45%] 
-    "
-                        />
-                    </div>
-
-                </div>
+                            className="absolute left-1/2 top-[60%] -translate-x-1/2 -translate-y-1/2 w-[42%] opacity-90 drop-shadow-xl z-20 lg:left-45 lg:top-75 lg:w-[45%] lg:translate-x-0 lg:translate-y-0"
+                          /> */}
+                        </div>
+                
+                      </div>
                 {/* Aoward and logo */}
                 {/* Award and logo */}
                 <div className="overflow-hidden relative py-6 bg-gray-50 mt-4">
@@ -511,7 +545,7 @@ export default function HeroSection() {
             {/* tabs section end */}
 
             {/*VerticalSlider.jsx*/}
-            <div className="border sticky relative rounded-xl  max-w-6xl mx-auto flex flex-col lg:flex-row">
+            <div className=" sticky relative rounded-xl  max-w-6xl mx-auto flex flex-col lg:flex-row">
                 {/* Left side: Text */}
                 <div className="relative rounded-xl flex-1 relative z-10 w-full mt-[7rem] h-[15rem] lg:w-1/2  p-6 flex flex-col justify-center  text-center lg:text-left bg-[#E9E5FF]">
                     <h2 className="text-3xl sm:text-4xl font-bold text-[#7A57EE] ">
@@ -596,7 +630,7 @@ export default function HeroSection() {
 
 
             <div
-                className=" border bg [F8F7FF] relative w-full max-w-8xl mx-auto py-12 overflow-hidden mt-0 "
+                className="bg [F8F7FF] relative w-full max-w-8xl mx-auto py-12 overflow-hidden mt-0 "
                 onMouseEnter={() => setPaused(true)}
                 onMouseLeave={() => setPaused(false)}
             >
@@ -710,7 +744,7 @@ export default function HeroSection() {
                     </div>
 
                 </div>
-                <section className="border w-full">
+                <section className="w-full">
                     <div className="max-w-7xl mx-auto px-4 sm:px-6 py-8 sm:py-16">
                         <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-[#E1E0FE] via-[#E1E0FE] to-[#8EEE73FF]">
 
