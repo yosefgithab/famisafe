@@ -22,14 +22,14 @@ export default function ForScholl() {
                     </div>
 
                     <h1 className="  text-2xl sm:text-3xl md:text-4xl xl:text-5xl font-extrabold leading-tight">
-                        {language === "en" ? translations.en.FamiSafeKeeps : language === "am" ? translations.am.FamiSafeKeeps : language== "om" ? translations.or.FamiSafeKeeps: ""}
+                        {language === "en" ? translations.en.FamiSafeKeeps : language === "am" ? translations.am.FamiSafeKeeps : language== "om" ? translations.om.FamiSafeKeeps: ""}
 
                     </h1>
 
 
 
                     <p className="mt-4 text-gray-600 max-w-xl text-sm sm:text-base mx-auto lg:mx-4">
-                        {language === "en" ? translations.en.MoniterProtect : language === "am" ? translations.am.MoniterProtect : language== "om" ? translations.or.MoniterProtect: ""}
+                        {language === "en" ? translations.en.MoniterProtect : language === "am" ? translations.am.MoniterProtect : language== "om" ? translations.om.MoniterProtect: ""}
                     </p>
 
                     {/* Buttons */}
@@ -43,7 +43,7 @@ export default function ForScholl() {
                          hover:from-purple-600 hover:to-cyan-500 
                          transition-all duration-300 shadow-md hover:shadow-lg"
                         >
-                            {language === "en" ? translations.en.StartFreeTrial : language === "am" ? translations.am.StartFreeTrial : language== "om" ? translations.or.StartFreeTrial: ""}
+                            {language === "en" ? translations.en.StartFreeTrial : language === "am" ? translations.am.StartFreeTrial : language== "om" ? translations.om.StartFreeTrial: ""}
                         </a>
 
                         <a
@@ -53,7 +53,7 @@ export default function ForScholl() {
                          hover:bg-purple-600 hover:text-white 
                          transition-all duration-300"
                         >
-                            {language === "en" ? translations.en.BuyNow : language === "am" ? translations.am.BuyNow : language== "om" ? translations.or.BuyNow: ""}
+                            {language === "en" ? translations.en.BuyNow : language === "am" ? translations.am.BuyNow : language== "om" ? translations.om.BuyNow: ""}
                         </a>
                     </div>
 
@@ -74,7 +74,7 @@ export default function ForScholl() {
             <br />
             {/* Title */}
             <h2 className="text-center text-2xl md:text-3xl font-semibold text-gray-900 mb-12">
-                {language === "en" ? translations.en.Technologyinschool : language === "am" ? translations.am.Technologyinschool : language== "om" ?  translations.or.Technologyinschool: ""}
+                {language === "en" ? translations.en.Technologyinschool : language === "am" ? translations.am.Technologyinschool : language== "om" ?  translations.om.Technologyinschool: ""}
             </h2>
 
             {/* Grid */}
@@ -105,7 +105,7 @@ export default function ForScholl() {
             </div>
             <br />
             <br /> <h2 className="text-center text-2xl md:text-3xl font-semibold mb-16">
-                {language === "en" ? translations.en.FamiSafeprotectsall : language === "am" ? translations.am.FamiSafeprotectsall : language== "om" ? translations.or.FamiSafeprotectsall: ""}
+                {language === "en" ? translations.en.FamiSafeprotectsall : language === "am" ? translations.am.FamiSafeprotectsall : language== "om" ? translations.om.FamiSafeprotectsall: ""}
             </h2>
 
             {/* ✅ MOBILE VIEW (EXACT FAMISAFE) */}
@@ -190,7 +190,7 @@ export default function ForScholl() {
 
             {/* Title */}
             <h2 className="text-2xl md:text-3xl font-semibold text-center mb-14">
-                {language === "en" ? translations.en.WhyisFamiSafe : language === "am" ? translations.am.WhyisFamiSafe :  language== "om" ? translations.or.WhyisFamiSafe: ""}
+                {language === "en" ? translations.en.WhyisFamiSafe : language === "am" ? translations.am.WhyisFamiSafe :  language== "om" ? translations.om.WhyisFamiSafe: ""}
             </h2>
 
             {/* Content */}
@@ -214,10 +214,10 @@ export default function ForScholl() {
                     {/* Item 1 */}
                     <div>
                         <h3 className="text-lg font-semibold mb-2">
-                            {language === "en" ? translations.en.ScreenSupervision : language === "am" ? translations.am.ScreenSupervision : language== "om" ? translations.or.ScreenSupervision: ""}
+                            {language === "en" ? translations.en.ScreenSupervision : language === "am" ? translations.am.ScreenSupervision : language== "om" ? translations.om.ScreenSupervision: ""}
                         </h3>
                         <p className="text-gray-600 text-sm leading-relaxed">
-                            {language === "en" ? translations.en.Asphoneortablet : language === "am" ? translations.am.Asphoneortablet : language== "om" ? translations.or.Asphoneortablet: ""}
+                            {language === "en" ? translations.en.Asphoneortablet : language === "am" ? translations.am.Asphoneortablet : language== "om" ? translations.om.Asphoneortablet: ""}
                         </p>
                     </div>
 
@@ -226,10 +226,10 @@ export default function ForScholl() {
                     {/* Item 2 */}
                     <div>
                         <h3 className="text-lg font-semibold mb-2">
-                            {language === "en" ? translations.en.AppBlocker : language === "am" ? translations.am.AppBlocker : language== "om" ? translations.or.AppBlocker: ""}
+                            {language === "en" ? translations.en.AppBlocker : language === "am" ? translations.am.AppBlocker : language== "om" ? translations.om.AppBlocker: ""}
                         </h3>
                         <p className="text-gray-600 text-sm leading-relaxed">
-                            {language === "en" ? translations.en.Studentsneedtofocus : language === "am" ? translations.am.Studentsneedtofocus : language== "om" ? translations.or.Studentsneedtofocus: ""}
+                            {language === "en" ? translations.en.Studentsneedtofocus : language === "am" ? translations.am.Studentsneedtofocus : language== "om" ? translations.om.Studentsneedtofocus: ""}
                         </p>
                     </div>
 
@@ -238,17 +238,17 @@ export default function ForScholl() {
                     {/* Item 3 */}
                     <div>
                         <h3 className="text-lg font-semibold mb-2">
-                            {language === "en" ? translations.en.OnlineSafety : language === "am" ? translations.am.OnlineSafety : translations.or.OnlineSafety}
+                            {language === "en" ? translations.en.OnlineSafety : language === "am" ? translations.am.OnlineSafety : translations.om.OnlineSafety}
                         </h3>
                         <p className="text-gray-600 text-sm leading-relaxed">
-                            {language === "en" ? translations.en.Theonlineworld : language === "am" ? translations.am.Theonlineworld : translations.or.Theonlineworld}
+                            {language === "en" ? translations.en.Theonlineworld : language === "am" ? translations.am.Theonlineworld : translations.om.Theonlineworld}
                         </p>
                     </div>
                 </div>
             </div>
             <br />
             <br />
-            <header className="w-full bg-[#342463]">
+            <header className="w-full bg-gradient-to-br from-[#DCEFFE] via-[#71AEDA] to-[#4A8ADD]rounded-3xl">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="flex flex-col lg:flex-row items-center justify-between min-h-[140px] lg:min-h-[180px] py-20 gap-6">
 
@@ -264,27 +264,27 @@ export default function ForScholl() {
                                     />
                                 </div>
 
-                                <span className="text-white font-semibold text-lg">
-                                     {language === "en" ? translations.en.FamiSafe : language === "am" ? translations.am.FamiSafe : language== "om" ? translations.or.FamiSafe: ""}
+                                <span className="text-black font-semibold text-lg">
+                                     {language === "en" ? translations.en.FamiSafe : language === "am" ? translations.am.FamiSafe : language== "om" ? translations.om.FamiSafe: ""}
                                 </span>
                             </div>
 
                             {/* HEADLINE */}
-                            <h1 className="text-white text-2xl sm:text-3xl lg:text-4xl font-bold leading-tight">
-                                {language === "en" ? translations.en.TheMostReliable : language === "am" ? translations.am.TheMostReliable : language== "om" ? translations.or.TheMostReliable: ""}
+                            <h1 className="text-black text-2xl sm:text-3xl lg:text-4xl font-bold leading-tight">
+                                {language === "en" ? translations.en.TheMostReliable : language === "am" ? translations.am.TheMostReliable : language== "om" ? translations.om.TheMostReliable: ""}
                             </h1>
                         </div>
 
                         {/* RIGHT SIDE BUTTONS */}
                         <div className="flex items-center gap-4">
                             {/* TRY IT FREE */}
-                            <button className="px-7 py-3 rounded-full bg-[#8E6CE9] text-white font-semibold text-sm sm:text-base hover:bg-[#7a5bd6] transition">
-                                 {language === "en" ? translations.en.TryitFrees : language === "am" ? translations.am.TryitFrees : language== "om" ? translations.or.TryitFrees: ""}
+                            <button className="px-7 py-3 rounded-full bg-[#1684F1] text-white font-semibold text-sm sm:text-base hover:bg-[#04268A] transition">
+                                 {language === "en" ? translations.en.TryitFrees : language === "am" ? translations.am.TryitFrees : language== "om" ? translations.om.TryitFrees: ""}
                             </button>
 
                             {/* BUY NOW */}
-                            <button className="px-7 py-3 rounded-full border-2 border-white text-white font-semibold text-sm sm:text-base hover:bg-white hover:text-[#342463] transition">
-                                 {language === "en" ? translations.en.BuyNow : language === "am" ? translations.am.BuyNow : language== "om" ? translations.or.BuyNow: ""}
+                            <button className="px-7 py-3 rounded-full border-2 border-[#1684F1] text-blue font-semibold text-sm sm:text-base hover:bg-white hover:text-[#1684F1] transition">
+                                 {language === "en" ? translations.en.BuyNow : language === "am" ? translations.am.BuyNow : language== "om" ? translations.om.BuyNow: ""}
                             </button>
                         </div>
 
